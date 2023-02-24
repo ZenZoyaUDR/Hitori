@@ -17,3 +17,7 @@ Typical Discord bots are ran in a node.js enviroment and need to be connected to
 5. Final step, go to your app on the Discord Developer portal, and set "Interactions Endpoint URL" to `<your vercel URL>/api/bot`
 
 _bootstrapped with [create-t3-app](https://create.t3.gg/)_
+
+## License
+
+This project is licensed under the [MIT license](https://choosealicense.com/licenses/mit).
