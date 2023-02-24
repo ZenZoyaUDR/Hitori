@@ -2,11 +2,11 @@
 
 Serverless Discord bot template using tRPC and Prisma.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fastridlol%2Fhitori&env=DATABASE_URL,DISCORD_CLIENT_ID,DISCORD_BOT_TOKEN,DISCORD_PUBLIC_KEY&repository-name=hitori-bot)
+
 ## But, why?
 
 Typical Discord bots are ran in a node.js enviroment and need to be connected to Discords Gateway 24/7, which requires a VPS or paid bot hosting. Hitori, however, runs off of interaction webhooks. Allowing you to create simple, yet efficent Discord bots which are online 24/7, and don't cost anything.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fastridlol%2Fhitori&env=DATABASE_URL,DISCORD_CLIENT_ID,DISCORD_BOT_TOKEN,DISCORD_PUBLIC_KEY&repository-name=hitori-bot)
 
 ## How to use
 
