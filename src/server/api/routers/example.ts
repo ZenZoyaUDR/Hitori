@@ -13,4 +13,12 @@ export const exampleRouter = createTRPCRouter({
   getAll: publicProcedure.query(({ ctx }) => {
     return ctx.prisma.example.findMany();
   }),
+  getURL: publicProcedure.query(() => {
+    const isVercel = !!process.env.VERCEL_URL;
+
+    const local = `http://127.0.0.1:${process.env.PORT ?? 3000}`;
+    const vercel = `https://${process.env.VERCEL_URL}`;
+
+    return isVercel ? vercel : local;
+  }),
 });
