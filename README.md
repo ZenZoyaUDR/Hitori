@@ -8,6 +8,13 @@ Serverless Discord bot template using tRPC and Prisma.
 
 Typical Discord bots are ran in a node.js enviroment and need to be connected to Discords Gateway 24/7, which requires a VPS or paid bot hosting. Hitori, however, runs off of interaction webhooks. Allowing you to create simple, yet efficent Discord bots which are online 24/7, and don't cost anything.
 
+### Advantages
+- Ability to deploy to Vercel, allowing for automating deployments.
+- Bring in technologies like tRPC and Prisma (Unusable in Cloudflare worker solutions).
+
+### Caveats
+- Inability to listen to *most* events as there's no Gateway. Meaning events like message create, role delete, etc. are impossible to listen into purely from just this.
+
 ## How to use
 
 1. Clone the template locally, copy `.env.example` into `.env`, and fill it.
